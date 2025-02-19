@@ -43,7 +43,7 @@
     @csrf
     <input type="hidden" name="product_id" value="{{ $product->id }}">
     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="{{ env('STRIPE_KEY') }}"
+        data-key="pk_test_51QtqI6Pve0eqSjIDzD9dzuwtPIno0FqIoZwCmp0eVwoj9COfgfkD4Ea0GewiDiw5bLV99Pdiy2VJxVUXJPttqVRH00BwZfKaoP"
         data-amount="{{ $product->price * 100 }}"
         data-name="{{ $product->name }}"
         data-description="{{ $product->description }}"
